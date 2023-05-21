@@ -1,0 +1,30 @@
+{
+  "type": "record",
+  "name": "ProductSchema",
+  "namespace": "com.application.kotlin.kafka.schemas",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string"
+    },
+    {
+      "name": "code",
+      "type": "string"
+    },
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "price",
+      "type": "bytes",
+      "logicalType": "decimal",
+      "precision": 4,
+      "scale": 2
+    },
+    {
+      "name": "promotionActive",
+      "type": "boolean"
+    }
+  ]
+}
